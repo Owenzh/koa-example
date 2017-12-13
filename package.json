@@ -1,0 +1,35 @@
+{
+  "name": "koa-example",
+  "version": "1.0.0",
+  "description": "a next web application.",
+  "main": "index.ts",
+  "dependencies": {
+    "@types/koa": "^2.0.42",
+    "@types/lodash": "^4.14.88",
+    "koa": "^2.4.1",
+    "koa-helmet": "^3.3.0",
+    "koa-router": "^7.3.0",
+    "koa-static": "^4.0.2",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "koa-webpack": "^1.0.0",
+    "ts-loader": "^3.2.0",
+    "typescript": "^2.6.2",
+    "webpack": "^3.10.0"
+  },
+  "scripts": {
+    "test": "test",
+    "build": "webpack",
+    "app": "node index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "None"
+  },
+  "keywords": [
+    "None"
+  ],
+  "author": "owen",
+  "license": "ISC"
+}
