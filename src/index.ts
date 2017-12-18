@@ -11,6 +11,15 @@ function bindingEvent() {
         .subscribe((count) => {
             console.log(`Clicked ${count} times!`);
         });
+
+
+    var txt = document.getElementById('txt');
+    var ipt: Rx.Observable<any> = Rx.Observable.fromEvent(txt, 'keyup').debounceTime(1500);
+  
+    ipt.subscribe(text => {
+        var _txt: any = text.target || text.srcElement
+        console.log(_txt.value);
+    })
 }
 
 function component() {
